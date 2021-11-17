@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Rampart+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: aqua;
+    }
+
+    .contaneir {
+        height: 450px;
+        
+        border-radius: 10px;
+        width: 300px;
+        background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.3),rgba(0,0,0,0.8)), url(https://image.freepik.com/free-vector/hand-painted-nature-background_23-2148940793.jpg) ;
+        background-size: cover;
+        padding: 30px;
+
+    }
+
+    header input {
+        width: 100%;
+        margin: auto;
+        height: 50px;
+        border-radius:  15px 0px 15px 0px;
+        background:rgba(255, 255, 255, 0.3);
+        margin-bottom: 30px;
+        padding-left: 7px;
+        font-size: 1.2rem;
+        
+        border: none;
+         margin-bottom: 20px;
+        border-bottom:2px solid aqua;
+    }
+    header input:focus{
+        outline: none;
+    }
+
+    .weather {
+        width: 100%;
+        text-align: center;
+        
+        margin: 20px 0px;
+    }
+
+    .city-name {
+        font-size: 2.2rem;
+        margin: 9px 0px;
+        font-family: 'Lato', sans-serif;
+        font-weight: bolder;
+        color: white;
+    }
+    .weather h2{
+        font-size: 1rem;
+        color: white;
+        margin: 9px 0px;
+    }
+    .number .celsous{
+        text-align: center;
+        color: white;
+        font-weight: 900;
+        font-size: 2.4rem;
+        font-family:'Lato', sans-serif;
+    }
+    .number h3{
+        text-align: center;
+        margin-top:5px ;
+        color:  white;
+        font-size: 1.6rem;
+    }
+    .decimal-num{
+        margin:9px 0px ;
+        text-align: center;
+        color: aliceblue;
+    }
+    #num{
+        font-size:3.4rem ;
+        display: inline;
+    }
+</style>
+
+<body>
+    <div class="contaneir" id="contaneir">
+  
+        <header>
+            <input type="text" id="search-box" placeholder="Search the city">
+        </header>
+        <div class="weather">
+            <div class="city-name" id="city-name">New York City,Us</div>
+            <h2 id="dateformate"></h2>
+        </div>
+        <div class="number">
+            <div class="celsous"><h1 id="num">14</h1><span>&#8451</span></div>
+            <h3 id="type">Clear</h3>
+            <div class="decimal-num"><span id="min">33.3(min)</span><span>&#8451</span><span>/</span><span id="max">1(max)
+                &#8451</span></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
