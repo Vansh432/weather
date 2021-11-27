@@ -45,10 +45,10 @@ function filldata(data){
         contaneir.style.backgroundImage="url(https://www.pexels.com/photo/water-on-glass-396547/)";
     }
     let min=document.getElementById('min');
-    min.innerHTML=`${Math.floor(data.main.temp_min-273.15)}`;
+    min.innerHTML=`${Math.floor(data.main.temp_min-273.15)}(min)`;
     let max=document.getElementById('max');
 
-    max.innerHTML=`${Math.ceil(data.main.temp_max-273.15)}&#8451`;
+    max.innerHTML=`${Math.ceil(data.main.temp_max-273.15)}&#8451(max)`;
     let dateformate=document.getElementById('dateformate');
     let todaydate=new Date();
     let date=showdate(todaydate);
